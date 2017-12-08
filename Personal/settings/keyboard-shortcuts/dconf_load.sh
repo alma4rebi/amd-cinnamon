@@ -12,7 +12,7 @@
 #
 ##################################################################################################################
 
-sudo apt-get install dconf-cli -y
+sudo pacman -S dconf dconf-editor --noconfirm --needed
 
 dconf load /org/cinnamon/desktop/keybindings/ < keyboard-shortcuts-cinnamon.dconf
 
