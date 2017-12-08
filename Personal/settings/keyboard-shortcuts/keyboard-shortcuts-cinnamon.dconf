@@ -206,16 +206,6 @@ name='gnome-terminal'
 [/]
 custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom9', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22', 'custom23', 'custom24', 'custom25', 'custom26', 'custom27', 'custom8', 'custom28', 'custom29', 'custom30', 'custom31', 'custom32', 'custom33', 'custom34', 'custom35', 'custom36', 'custom37', 'custom38', 'custom39', 'custom40']
 
-[media-keys]
-screenshot-clip=@as []
-next=['AudioNext']
-play=['AudioPlay']
-volume-up=['AudioRaiseVolume']
-volume-down=['AudioLowerVolume']
-stop=['AudioStop']
-volume-mute=['AudioMute']
-previous=['AudioPrev']
-
 [wm]
 close=['<Shift><Super>q']
 switch-to-workspace-1=['<Super>1']
