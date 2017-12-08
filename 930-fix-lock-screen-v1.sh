@@ -3,17 +3,20 @@ set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
+# Website	:	https://www.archmerge.info
 # Website	:	https://www.archmerge.com
 # Website	:	https://www.archmerged.com
+# Website	:	https://www.archmergeforum.com
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
 
-# use mirror if you have a slow connection
-sudo pacman -Syyu
-sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
-sudo pacman -S cinnamon --noconfirm --needed
-sudo systemctl enable lightdm.service -f
-sudo systemctl set-default graphical.target
+echo "Change lock screen to standard lock screen in ArchMerge ..."
+
+sudo sed -i 's/current_theme       default/current_theme       archmerge_transfer/g' /etc/slim.conf
+
+echo "################################################################"
+echo "####               LOCK    SCREEN   APPLIED               ######"
+echo "################################################################"

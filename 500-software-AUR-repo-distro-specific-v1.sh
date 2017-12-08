@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,16 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+echo "AUR - DESKTOP SPECIFIC APPLICATIONS "
 
-# Below command will backup everything inside the project folder
-git add --all .
+sh AUR-DS/install-mugshot-v*.sh
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+sh AUR-DS/install-menulibre-v*.sh
 
-read input
+sh AUR-DS/install-xfce-slimlock-v*.sh
 
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
-
+sh AUR/install-yad-v*.sh
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "####       Software from AUR-DS folder installed          ######"
 echo "################################################################"

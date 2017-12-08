@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,19 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
 
-# Below command will backup everything inside the project folder
-git add --all .
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+echo "Copy/pasting gimp scripts and themes"
 
-read input
+[ -d $HOME"/.gimp-2.8" ] || mkdir -p $HOME"/.gimp-2.8"
+[ -d $HOME"/.gimp-2.8/scripts" ] || mkdir -p $HOME"/.gimp-2.8/scripts"
+[ -d $HOME"/.gimp-2.8/themes" ] || mkdir -p $HOME"/.gimp-2.8/themes"
 
-# Committing to the local repository with a message containing the time details and commit text
+cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
+cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
 
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
 
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "#########      gimp scripts and themes copied   ################"
 echo "################################################################"

@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,20 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+echo "Installing fonts"
 
-# Below command will backup everything inside the project folder
-git add --all .
-
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
-
-read input
-
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
-
+sudo pacman -S adobe-source-sans-pro-fonts --noconfirm --needed
+sudo pacman -S cantarell-fonts --noconfirm --needed
+sudo pacman -S noto-fonts --noconfirm --needed
+sudo pacman -S terminus-font --noconfirm --needed
+sudo pacman -S ttf-bitstream-vera --noconfirm --needed
+sudo pacman -S ttf-dejavu --noconfirm --needed
+sudo pacman -S ttf-droid --noconfirm --needed
+sudo pacman -S ttf-inconsolata --noconfirm --needed
+sudo pacman -S ttf-liberation --noconfirm --needed
+sudo pacman -S ttf-roboto --noconfirm --needed
+sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "####             Fonts have been installed                  ####"
 echo "################################################################"

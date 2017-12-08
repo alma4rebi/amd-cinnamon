@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,13 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+# [    0.000000] [Firmware Bug]: TSC_DEADLINE disabled due to Errata; please update microcode to version: 0x52 (or later)
 
-# Below command will backup everything inside the project folder
-git add --all .
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
-
-read input
-
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
+sudo pacman -S intel-ucode --noconfirm
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "####                             Fix done                 ######"
 echo "################################################################"

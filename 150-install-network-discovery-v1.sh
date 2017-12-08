@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,13 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+echo "Network Discovery"
 
-# Below command will backup everything inside the project folder
-git add --all .
-
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
-
-read input
-
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
+sudo pacman -S --noconfirm --needed avahi
+sudo systemctl enable avahi-daemon.service
+sudo systemctl start avahi-daemon.service
 
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "####       network discovery  software installed        ########"
 echo "################################################################"

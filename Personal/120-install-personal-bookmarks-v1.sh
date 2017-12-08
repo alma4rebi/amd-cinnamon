@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,12 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+echo "Copy bookmarks"
 
-# Below command will backup everything inside the project folder
-git add --all .
+[ -d $HOME"/.config/gtk-3.0" ] || mkdir -p $HOME"/.config/gtk-3.0"
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
-
-read input
-
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
-
+cp -r settings/bookmarks/* ~/.config/gtk-3.0/
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "#########      bookmarks  copied                ################"
 echo "################################################################"
