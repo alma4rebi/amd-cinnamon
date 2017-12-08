@@ -24,7 +24,7 @@ echo "DESKTOP SPECIFIC APPLICATIONS"
 
 echo "Installing category Accessories"
 
-#sudo pacman -S --noconfirm --needed xfce4-notifyd
+
 
 echo "Installing category Development"
 
