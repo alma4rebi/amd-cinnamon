@@ -24,8 +24,6 @@ echo "DESKTOP SPECIFIC APPLICATIONS"
 
 echo "Installing category Accessories"
 
-
-
 echo "Installing category Development"
 
 echo "Installing category Education"
