@@ -30,7 +30,7 @@ name='inkscape'
 
 [custom-keybindings/custom27]
 binding=['<Super>F2']
-command='subl'
+command='subl3'
 name='sublime-text'
 
 [custom-keybindings/custom30]
