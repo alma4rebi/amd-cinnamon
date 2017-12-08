@@ -40,6 +40,12 @@ cp -rT /etc/skel ~
 
 echo "removing all folders and files unnecessary for Cinnamon"
 rm ~/.config/autostart/calamares.desktop
+rm -rf ~/.config/nitrogen
+
+echo "copying the dconf settings for cinnamon"
+cd Personal
+sh 630-install-dconf-settings-v1.sh
+
 
 echo "################################################################"
 echo "####     Software from ArchMerge Repository installed       ####"

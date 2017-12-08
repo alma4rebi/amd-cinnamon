@@ -13,7 +13,7 @@ set -e
 #
 ##################################################################################################################
 
-echo "Copy bookmarks"
+echo "dconf settings must be copied over"
 
 [ -d $HOME"/.config/dconf" ] || mkdir -p $HOME"/.config/dconf"
 
