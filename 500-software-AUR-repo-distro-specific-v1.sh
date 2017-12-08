@@ -15,11 +15,6 @@ set -e
 
 echo "AUR - DESKTOP SPECIFIC APPLICATIONS "
 
-#sh AUR-DS/install-mugshot-v*.sh
-
-#sh AUR-DS/install-menulibre-v*.sh
-
-#sh AUR-DS/install-xfce-slimlock-v*.sh
 
 sh AUR/install-yad-v*.sh
 
