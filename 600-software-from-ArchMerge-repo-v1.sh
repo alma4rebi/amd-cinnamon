@@ -28,11 +28,11 @@ sudo pacman -S archmerge-iso-skel-git --noconfirm --needed
 sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
 sudo pacman -S archmerge-plank-themes-git --noconfirm --needed
 sudo pacman -S archmerge-root-git --noconfirm --needed
-sudo pacman -S archmerge-slimlock-themes-git --noconfirm --needed
+#sudo pacman -S archmerge-slimlock-themes-git --noconfirm --needed
 sudo pacman -S archmerge-termite-themes-git --noconfirm --needed
 #sudo pacman -S archmerge-tint2-themes-git --noconfirm --needed
 sudo pacman -S archmerge-wallpapers-git --noconfirm --needed
-sudo pacman -S archmerge-xfce-thunar-git --noconfirm --needed
+#sudo pacman -S archmerge-xfce-thunar-git --noconfirm --needed
 
 echo "Copying all files and folders from /etc/skel to ~"
 
