@@ -1,4 +1,4 @@
-# ArchMergeD XFCE desktop
+# ArchMergeD Cinnamon desktop
 
 # Start by installing the latest ArchMergeD installation
 
