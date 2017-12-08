@@ -38,6 +38,9 @@ echo "Copying all files and folders from /etc/skel to ~"
 
 cp -rT /etc/skel ~
 
+echo "removing all folders and files unnecessary for Cinnamon"
+rm ~/.config/autostart/calamares.desktop
+
 echo "################################################################"
 echo "####     Software from ArchMerge Repository installed       ####"
 echo "################################################################"
