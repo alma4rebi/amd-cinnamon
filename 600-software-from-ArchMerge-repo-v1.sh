@@ -38,9 +38,17 @@ echo "Copying all files and folders from /etc/skel to ~"
 
 cp -rT /etc/skel ~
 
-echo "removing all folders and files unnecessary for Cinnamon"
+echo "removing all folders and files unnecessary for Cinnamon from .config"
 rm ~/.config/autostart/calamares.desktop
 rm -rf ~/.config/nitrogen
+rm -rf ~/.config/tint2
+rm -rf ~/.config/volumeicon
+rm ~/.config/compton.conf
+
+echo "removing all folders and files unnecessary for Cinnamon from .local"
+
+rm -rf ~/.local/share/applications
+rm -rf ~/.local/share/xfpanel-switch
 
 echo "copying the dconf settings for cinnamon"
 cd Personal
