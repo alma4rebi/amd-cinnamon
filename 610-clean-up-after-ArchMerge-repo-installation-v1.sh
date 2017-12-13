@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,12 +13,34 @@ set -e
 #
 ##################################################################################################################
 
-echo "dconf settings must be copied over for plank, theming etc..."
+echo "ArchMerge Repository is installed"
+echo "Not all files and folders from the Archmerge repo"
+echo "are required for this desktop environment."
+echo
+echo ".config folder"
+echo "Removing all folders and files unnecessary from .config"
+echo
+echo "Removing Files"
+echo
+rm -f ~/.config/autostart/calamares.desktop
+rm -f ~/.config/compton.conf
+echo
+echo "Removing folders"
+echo
+rm -rf ~/.config/nitrogen
+rm -rf ~/.config/tint2
+rm -rf ~/.config/volumeicon
 
-[ -d $HOME"/.config/dconf" ] || mkdir -p $HOME"/.config/dconf"
-
-cp -rf settings/dconf/* ~/.config/dconf/
+echo ".local folder"
+echo "Removing all folders and files unnecessary for from .local"
+echo
+echo "Removing folders"
+echo
+rm -rf ~/.local/share/applications
+rm -rf ~/.local/share/xfpanel-switch
+rm -rf ~/.local/share/applications
+rm -rf ~/.local/share/xfpanel-switch
 
 echo "################################################################"
-echo "#########      dconf settings  copied           ################"
+echo "####  Cleanup after ArchMerge Repository installation done  ####"
 echo "################################################################"
