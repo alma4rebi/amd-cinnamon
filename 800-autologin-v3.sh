@@ -28,4 +28,3 @@ sudo sed -i 's/'#autologin-session='/'autologin-session=cinnamon'/g' /etc/lightd
 echo "################################################################"
 echo "####        You can now autologin - reboot to check       ######"
 echo "################################################################"
-
