@@ -23,10 +23,10 @@ binding=['<Super>F5']
 command='meld'
 name='meld'
 
-[custom-keybindings/custom40]
-binding=['<Super>h']
-command="termite - e 'htop task manager' -e htop"
-name='htop'
+[custom-keybindings/custom39]
+binding=['<Primary><Alt>v']
+command='vivaldi-stable'
+name='vivaldi'
 
 [custom-keybindings/custom9]
 binding=['<Super>F4']
@@ -148,6 +148,11 @@ binding=['<Super>F1']
 command='firefox'
 name='firefox'
 
+[custom-keybindings/custom41]
+binding=['<Primary><Alt>Return']
+command='termite'
+name='termite'
+
 [custom-keybindings/custom14]
 binding=['<Primary><Alt>g']
 command='gimp'
@@ -204,7 +209,7 @@ command='gnome-terminal'
 name='gnome-terminal'
 
 [/]
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom9', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22', 'custom23', 'custom24', 'custom25', 'custom26', 'custom27', 'custom8', 'custom28', 'custom29', 'custom30', 'custom31', 'custom32', 'custom33', 'custom34', 'custom35', 'custom36', 'custom37', 'custom38', 'custom40']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom9', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22', 'custom23', 'custom24', 'custom25', 'custom26', 'custom27', 'custom8', 'custom28', 'custom29', 'custom30', 'custom31', 'custom32', 'custom33', 'custom34', 'custom35', 'custom36', 'custom37', 'custom38', 'custom40', 'custom39', 'custom41']
 
 [wm]
 close=['<Shift><Super>q']
